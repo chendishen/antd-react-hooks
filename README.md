@@ -4,3 +4,7 @@
 
 npm install eslint-plugin-react-hooks --save-dev
 安装react-hooks-eslint来检测代码
+
+antd-mobile 的 react-hooks版本的目录位置
+src->pages->antd-components
+目录：src->pages->Main.js
