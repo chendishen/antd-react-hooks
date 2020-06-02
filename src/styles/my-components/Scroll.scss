@@ -1,0 +1,28 @@
+.content{
+    overflow: hidden;
+    width: 100%;
+    background: #E8EFFB;
+    .scroll_prod{
+        position: relative;
+        float: left;
+        width:193px;
+        height:241px;
+        background:rgba(255,255,255,1);
+        box-shadow:0px 3px 6px rgba(0,0,0,0.16);
+        opacity:1;
+        border-radius:10px;
+        margin: 14px;
+        img{
+            width: 162px;
+            height: 162px;
+            display: block;
+            margin: 0 auto;
+        }
+        div{
+            text-align: center;
+            font-size: 26px;
+            margin-top: 11px;
+            color: #666666;
+        }
+    }
+}
