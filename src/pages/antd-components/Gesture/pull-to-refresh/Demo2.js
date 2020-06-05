@@ -54,7 +54,12 @@ function PullToRefresh2() {
     // }
 
     useEffect(() => {
+        // const hei = height - ReactDOM.findDOMNode(ref.current).offsetTop;
+        console.log(height)
+        console.log(ReactDOM.findDOMNode(ref.current))
+        console.log(ReactDOM.findDOMNode(ref.current).offsetTop)
         const hei = height - ReactDOM.findDOMNode(ref.current).offsetTop;
+        console.log(hei)
 
         setTimeout(() => {
             setRData(genData())
@@ -162,6 +167,7 @@ function PullToRefresh2() {
                 margin: '5px 0',
             }}
             pullToRefresh={<PullToRefresh
+                distanceToRefresh={window.devicePixelRatio * 25}
                 refreshing={refreshing}
                 onRefresh={onRefresh}
             />}

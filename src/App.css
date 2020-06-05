@@ -45,3 +45,11 @@
   font-size: 32px;
   line-height: 200px;
 }
+
+.demo-tit{
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  height: 150px;
+  line-height: 150px;
+}
