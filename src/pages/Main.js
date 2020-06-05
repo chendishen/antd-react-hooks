@@ -5,6 +5,7 @@ import AppTest from '../AppTest';
 // example 默认首页
 import App from '../App';
 // antd-components
+import Menu1 from '../pages/antd-components/Navigation/Menu/Demo1';
 import Carousel1 from '../pages/antd-components/DataDisplay/Carousel/Demo1';
 import Carousel3 from '../pages/antd-components/DataDisplay/Carousel/Demo3';
 import PullToRefresh2 from '../pages/antd-components/Gesture/pull-to-refresh/Demo2';
@@ -20,6 +21,7 @@ function Main(){
     return (
         <Router>
             <Route path="/" exact component={App} />
+            <Route path="/Menu" exact component={Menu1} />
             <Route path="/Carousel" exact component={Carousel1} />
             <Route path="/Carousel3" exact component={Carousel3} />
             <Route path="/PullToRefresh2" exact component={PullToRefresh2} />
