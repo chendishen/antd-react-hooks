@@ -7,7 +7,7 @@
 ### npm install better-scroll --save
 ##### (滚动组件)
 
-## npm install react-zmage --save
+### npm install react-zmage --save
 ##### (图片组件)
 
 ##### antd-mobile 的 react-hooks版本的目录位置
