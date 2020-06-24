@@ -31,14 +31,14 @@ const App = (props) => {
           <Card.Footer content="" extra={<div>移动端demo</div>} />
         </Card>
         <WhiteSpace size="lg" />
-        <Card onClick={(()=>{toDetail('/countdown')})}>
+        <Card onClick={(()=>{toDetail('/modal')})}>
           <Card.Header
-            title="倒计时demo"
+            title="弹窗demo"
             thumb="https://gw.alipayobjects.com/zos/rmsportal/MRhHctKOineMbKAZslML.jpg"
             extra={<span>antd-mobile</span>}
           />
           <Card.Body>
-            <div>react-hooks制作倒计时的实战用法</div>
+            <div>react-hooks制作自定义弹窗的实战用法</div>
           </Card.Body>
           <Card.Footer content="" extra={<div>移动端demo</div>} />
         </Card>

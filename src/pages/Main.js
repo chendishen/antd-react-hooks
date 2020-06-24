@@ -17,6 +17,7 @@ import Scroll from '../pages/my-components/Scroll';
 // example
 import Order from './example/order/Order';
 import OrderDetail from './example/order/OrderDetail';
+import Modal from './example/modal/Modal';
 
 function Main(){
     return (
@@ -30,6 +31,7 @@ function Main(){
             <Route path="/Scroll" exact component={Scroll} />
             <Route path="/Order" exact component={Order} />
             <Route path="/OrderDetail" exact component={OrderDetail} />
+            <Route path="/Modal" exact component={Modal} />
         </Router>
     )
 }
