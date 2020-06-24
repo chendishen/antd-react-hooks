@@ -19,11 +19,11 @@ const App = () => {
         .then(res => {
           console.log(res)
           const data = res.data
-          // const action = getListAction(data)
-          const action = {
-              type:'GET_LIST',
-              value:data
-          }
+          const action = getListAction(data)
+          // const action = {
+          //     type:'GET_LIST',
+          //     value:data
+          // }
           store.dispatch(action)
           setArray(data)
         })

@@ -8,6 +8,7 @@ import App from '../App';
 import Menu1 from '../pages/antd-components/Navigation/Menu/Demo1';
 import Carousel1 from '../pages/antd-components/DataDisplay/Carousel/Demo1';
 import Carousel3 from '../pages/antd-components/DataDisplay/Carousel/Demo3';
+import Modal1 from '../pages/antd-components/Feedback/Modal/Demo1';
 import PullToRefresh2 from '../pages/antd-components/Gesture/pull-to-refresh/Demo2';
 
 // my-components
@@ -24,6 +25,7 @@ function Main(){
             <Route path="/Menu" exact component={Menu1} />
             <Route path="/Carousel" exact component={Carousel1} />
             <Route path="/Carousel3" exact component={Carousel3} />
+            <Route path="/Modal1" exact component={Modal1} />
             <Route path="/PullToRefresh2" exact component={PullToRefresh2} />
             <Route path="/Scroll" exact component={Scroll} />
             <Route path="/Order" exact component={Order} />

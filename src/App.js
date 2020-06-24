@@ -10,8 +10,8 @@ const App = (props) => {
 
   }, [])
 
-  function toDetail(e,userid){
-    props.history.push({ pathname: "/order" });
+  function toDetail(e){
+    props.history.push({ pathname: e });
   }
 
   return (
@@ -19,7 +19,7 @@ const App = (props) => {
       <div className='demo-tit'>antd框架应用实例</div>
       <WingBlank size="lg">
         <WhiteSpace size="lg" />
-        <Card onClick={(()=>{toDetail()})}>
+        <Card onClick={(()=>{toDetail('/order')})}>
           <Card.Header
             title="订单demo"
             thumb="https://gw.alipayobjects.com/zos/rmsportal/MRhHctKOineMbKAZslML.jpg"
@@ -27,6 +27,18 @@ const App = (props) => {
           />
           <Card.Body>
             <div>内含Tabs、PullToRefresh、ListView、Carousel的实战用法</div>
+          </Card.Body>
+          <Card.Footer content="" extra={<div>移动端demo</div>} />
+        </Card>
+        <WhiteSpace size="lg" />
+        <Card onClick={(()=>{toDetail('/countdown')})}>
+          <Card.Header
+            title="倒计时demo"
+            thumb="https://gw.alipayobjects.com/zos/rmsportal/MRhHctKOineMbKAZslML.jpg"
+            extra={<span>antd-mobile</span>}
+          />
+          <Card.Body>
+            <div>react-hooks制作倒计时的实战用法</div>
           </Card.Body>
           <Card.Footer content="" extra={<div>移动端demo</div>} />
         </Card>
