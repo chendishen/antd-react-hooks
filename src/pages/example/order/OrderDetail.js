@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Carousel } from 'antd-mobile';
 import '../../../styles/order/OrderDetail.scss'
 import Zmage from 'react-zmage'
+import BScroll from 'better-scroll'
 
 function OrderDetail(props) {
+    const [Bscroll, setBscroll] = useState('')
     // 接收到的userid
     const [PropsUserId, setPropsUserId] = useState(props.location.userid)
     const [data, setData] = useState(['1', '2', '3'])
@@ -86,6 +88,17 @@ function OrderDetail(props) {
         }, 100);
     }, [])
 
+    
+    useEffect(() => {
+        const wrapper = document.querySelector('.order-evaluate-content')
+        const scroll = new BScroll(wrapper, {
+            scrollX: true,
+            click: true,
+            scrollY: false,
+        })
+        setBscroll(scroll)
+    }, [])
+
     function afterSlide(index) {
         setSlideIndex(index)
     }
@@ -153,8 +166,7 @@ function OrderDetail(props) {
                     爱情结晶
                 </div>
                 <div className='order-evaluate-content'>
-                    <p>爱情的小船很稳，说飘就飘</p>
-                    <ul style={{ width: `${30 * dataEvaluate.length}vw` }}>
+                    <ul style={{ width: `${28 * dataEvaluate.length}vw` }}>
                         {
                             dataEvaluate.map((item, index) => {
                                 return (
